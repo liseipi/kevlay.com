@@ -41,6 +41,11 @@ export default {
   modules: [
   ],
 
+  // Define the dist directory for your Nuxt application
+  generate: {
+    dir: 'docs'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
