@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <div>index <NLink to="/about">about</NLink></div>
 </template>
 
 <script>
