@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'kevlay',
+    title: 'kevlay凯伏莱',
     htmlAttrs: {
       lang: 'en'
     },
