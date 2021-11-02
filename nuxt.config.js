@@ -24,6 +24,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@assets/css/style.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -48,5 +49,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    filenames: {
+      app: ({ isDev }) => isDev ? '[name].js' : '[name].js',
+      chunk: ({ isDev }) => isDev ? '[name].js' : '[name].js',
+      css: ({ isDev }) => isDev ? '[name].css' : '[name].css',
+      json: ({ isDev }) => isDev ? '[name].json' : '[name].json',
+      img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'img/[name].[ext]',
+      font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name].[ext]',
+      video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[name].[ext]'
+    },
   }
 }
