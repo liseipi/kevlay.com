@@ -17,9 +17,9 @@
         <li><NLink to="/products" tag="a">产品</NLink></li>
         <li><NLink to="/library" tag="a">资料库</NLink></li>
         <li><NLink to="/about" tag="a">公司</NLink></li>
-        <li><a href="news.asp">新闻</a></li>
-        <li><a href="wheretobuy.asp">服务与支持</a></li>
-        <li><a href="about.asp?c=7&amp;name=联系我们">联系我们</a></li>
+        <li><NLink to="/news" tag="a">新闻</NLink></li>
+        <li><NLink to="/wheretobuy" tag="a">服务与支持</NLink></li>
+        <li><NLink to="/about/contactus" tag="a">联系我们</NLink></li>
       </ul></div>
     </div>
   </div>
