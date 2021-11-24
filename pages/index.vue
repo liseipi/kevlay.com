@@ -6,7 +6,7 @@
       <div class="home clf">
         <div class="fl">
           <div id="home-slider" style="width: 550px;">
-            <div class="swiper my-swiper">
+            <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="@/assets/images/slides/cde_rd.jpg" alt="kevlay">
@@ -27,7 +27,25 @@
                   <img src="@/assets/images/slides/len_rd.jpg" alt="kevlay">
                 </div>
               </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <!--        <div class="swiper-button-next"></div>-->
+              <!--        <div class="swiper-button-prev"></div>-->
             </div>
+            <script>
+              var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                // nextButton: '.swiper-button-next',
+                // prevButton: '.swiper-button-prev',
+                paginationClickable: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 3000,
+                autoplayDisableOnInteraction: false,
+                effect: 'fade'
+              });
+            </script>
           </div>
         </div>
         <div class="fr rpord">
@@ -49,36 +67,13 @@
 </template>
 
 <script>
-import Swiper, {Navigation, Pagination} from 'swiper';
-
-// swiper bundle styles
-import 'swiper/swiper.min.css'
-
 export default {
   components: {
     Nav: () => import('~/components/nav'),
   },
   methods: {
-    onSwiper: (swiper) => {
-      console.log(swiper);
-    },
-    onSlideChange: () => {
-      console.log('slide change');
-    }
   },
   mounted() {
-    new Swiper('.my-swiper', {
-      // pass modules here
-      modules: [Navigation, Pagination],
-      // ...
-
-      spaceBetween: 10,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-    });
   }
 }
 </script>
