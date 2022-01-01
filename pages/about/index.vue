@@ -29,5 +29,8 @@
 <script>
 export default {
   name: "about/index",
+  head: {
+    title: 'kevlay凯伏莱 - 关于我们'
+  },
 }
 </script>

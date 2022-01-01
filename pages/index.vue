@@ -1,7 +1,7 @@
 <template>
   <div class="conbox">
     <div class="container clf">
-      <Nav />
+      <Nav/>
 
       <div class="home clf">
         <div class="fl">
@@ -33,19 +33,6 @@
               <!--        <div class="swiper-button-next"></div>-->
               <!--        <div class="swiper-button-prev"></div>-->
             </div>
-            <script>
-              var swiper = new Swiper('.swiper-container', {
-                pagination: '.swiper-pagination',
-                // nextButton: '.swiper-button-next',
-                // prevButton: '.swiper-button-prev',
-                paginationClickable: true,
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: 3000,
-                autoplayDisableOnInteraction: false,
-                effect: 'fade'
-              });
-            </script>
           </div>
         </div>
         <div class="fr rpord">
@@ -71,9 +58,21 @@ export default {
   components: {
     Nav: () => import('~/components/nav'),
   },
-  methods: {
-  },
+  methods: {},
   mounted() {
+    this.$nextTick(() => {
+      new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        effect: 'fade'
+      });
+    })
   }
 }
 </script>

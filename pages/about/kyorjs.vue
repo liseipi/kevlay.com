@@ -10,5 +10,8 @@
 <script>
 export default {
   name: "about/kyorjs",
+  head: {
+    title: 'kevlay凯伏莱 - 科研和技术'
+  },
 }
 </script>

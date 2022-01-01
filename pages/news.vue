@@ -31,6 +31,9 @@
 
 export default {
   name: "news",
+  head: {
+    title: 'kevlay凯伏莱 - 新闻与活动'
+  },
   components: {
     Nav: () => import('~/components/nav'),
   },

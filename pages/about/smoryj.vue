@@ -10,5 +10,8 @@
 <script>
 export default {
   name: "about/smoryj",
+  head: {
+    title: 'kevlay凯伏莱 - 使命和愿景'
+  },
 }
 </script>

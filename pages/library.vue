@@ -80,6 +80,9 @@
 <script>
 export default {
   name: "library",
+  head: {
+    title: 'kevlay凯伏莱 - 资料库'
+  },
   components: {
     Nav: () => import('~/components/nav'),
   },

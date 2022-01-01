@@ -326,6 +326,9 @@
 <script>
 export default {
   name: "wheretobuy",
+  head: {
+    title: 'kevlay凯伏莱 - 服务与支持'
+  },
   components: {
     Nav: () => import('~/components/nav'),
   },

@@ -14,7 +14,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'keywords', name: 'keywords', content: 'kevlay凯伏莱, kevlay, 凯伏莱, 美国Kevlay' },
+      { hid: 'description', name: 'description', content: '美国Kevlay是基于瑞士Weidemann专业技术平台的成员之一，是专为电力系统自动化提供优质服务的专业设备供应服务商，长期致力于领先技术的产品和真诚优质的服务与广泛的客户及伙伴进行合作，并时刻准备着投入到他们的需求中去。我们习惯于把从实践中获得的经验加以不断地总结，并把这些富有成就的或深刻教训的经验用于不断改进今天和明天的每一个工作细节。' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'baidu-site-verification', content: 'code-zOBdXOSZhl' }
     ],

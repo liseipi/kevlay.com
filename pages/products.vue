@@ -105,6 +105,9 @@
 <script>
 export default {
   name: "products",
+  head: {
+    title: 'kevlay凯伏莱 - 产品展示'
+  },
   components: {
     Nav: () => import('~/components/nav'),
   },

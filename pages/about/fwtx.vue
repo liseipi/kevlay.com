@@ -19,5 +19,8 @@
 <script>
 export default {
   name: "about/fwtx",
+  head: {
+    title: 'kevlay凯伏莱 - 服务体系'
+  },
 }
 </script>

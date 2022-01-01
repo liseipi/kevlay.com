@@ -14,6 +14,9 @@
 <script>
 export default {
   name: "about",
+  head: {
+    title: 'kevlay凯伏莱 - 企业信息'
+  },
   components: {
     Nav: () => import('~/components/nav'),
     AboutLeft: () => import('~/components/about_left'),
