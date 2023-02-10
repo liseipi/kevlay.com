@@ -9,12 +9,12 @@
                  cellspacing="0">
             <tbody>
             <tr>
-              <td><strong><span style="font-size:14px;"> kevlay   中国代表处<br><br></span></strong>
+              <td><strong><span style="font-size:14px;">kevlay 武汉<br><br></span></strong>
                 <hr>
               </td>
             </tr>
             <tr>
-              <td>地址：广东省广州市围仔工业路2号光耀商务园D座201</td>
+              <td>地址：武汉东湖新技术开发区新世界广场802</td>
             </tr>
             <tr>
               <td>电话：+86 18922707603</td>
