@@ -21,6 +21,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://hm.baidu.com/hm.js?76a1d108bb08957bb0ef6b66c27655f5' }
     ]
   },
 
@@ -34,6 +37,7 @@ export default {
   plugins: [
     {src: '@assets/script/jquery.min', ssr: false},
     {src: '@assets/script/swiper.min', ssr: false},
+    {src: '~/plugins/baidu', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

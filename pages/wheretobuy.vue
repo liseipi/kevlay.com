@@ -5,42 +5,19 @@
 
       <div class="container">
         <div class="country">	<div id="countryWaitCue" style="display:inline;visibility:hidden"><img src="public/images/waitCue.gif" id="countryWaitCueImg" align="absmiddle"></div>
-          <div id="countryDetail" style="display:inline"><span class="flag"><img border="0" src="public/images/map.gif" align="absmiddle">&nbsp;&nbsp;All Countries</span><a href="javascript:showCountry(true)">Change</a></div>
-          <form style="display:none" id="frmCtry" name="frmCtry" method="post" action="http://www.erico.com/setLocale.asp">
-            <select class="ctry" id="ctry" name="ctry" onchange="changeCountry()">
-              <option value="">简体中文</option>
-              <option value="INTL">繁体中文</option>
-              <option value="INTL">English</option>
-            </select>
-          </form>
-
-          <script language="javascript">
-            function showCountry() {
-              document.getElementById('countryDetail').style.display = 'none';
-              document.getElementById('frmCtry').style.display = 'inline';
-            }
-            function changeCountry() {
-              document.getElementById('countryWaitCue').style.visibility = 'visible';
-              setTimeout('document.images["countryWaitCueImg"].src="public/images/waitCue.gif"', 0); // Needed to keep GIF animating in IE.
-              document.frmCtry.submit();
-            }
-            function setLocale(sHref, sReturnUrl) {
-              document.getElementById('countryWaitCue').style.visibility = 'visible';
-              setTimeout('document.images["countryWaitCueImg"].src="public/images/waitCue.gif"', 0); // Needed to keep GIF animating in IE.
-              sLoc = "default.html?lang=" + sHref + "&returnURL=" + escape(sReturnUrl);
-              window.location = sLoc;
-            }
-          </script></div>
+          <div id="countryDetail" style="display:inline"><span class="flag"><img border="0" src="public/images/map.gif" align="absmiddle">&nbsp;&nbsp;All Countries</span><a href="#">Change</a></div>
+          <select class="ctry" id="ctry" name="ctry">
+            <option value="">简体中文</option>
+            <option value="INTL">繁体中文</option>
+            <option value="INTL">English</option>
+          </select>
+        </div>
 
         <div id="mainContent">
-
-
           <h1>服务与支持</h1>
           <p style="padding-bottom:20px">我们对客户的承诺不仅仅是监测和保护设备。我们还提供各种培训和运营服务，帮助我们的客户最大限度地发挥我们产品的潜力。认证工程师和培训老师提供第一手的帮助，以确保我们客户的业务继续增长。</p>
 
-
           <div class="searchWrap section">
-
             <div class="oneColumn" style="background:#eee; line-height:22px; padding:20px; padding-bottom:40px;">
               <h3 class="service">
                 客户服务中心</h3>
@@ -48,18 +25,18 @@
                 <ul>
                   <li>
                     <span>按世界区域</span>
-                    <select name="ctl00$pageContent$CustomerServiceCenter$ddlRegionCustomerServiceCenters" onchange="javascript:setTimeout('__doPostBack(\'ctl00$pageContent$CustomerServiceCenter$ddlRegionCustomerServiceCenters\',\'\')', 0)" id="ctl00_pageContent_CustomerServiceCenter_ddlRegionCustomerServiceCenters">
+                    <select name="ctl00$pageContent$CustomerServiceCenter$ddlRegionCustomerServiceCenters"  id="ctl00_pageContent_CustomerServiceCenter_ddlRegionCustomerServiceCenters">
                       <option selected="selected" value="">（选择）</option>
                       <option value="Asia Pacific">亚太区</option>
                       <option value="Europe - Middle East - Africa">欧洲 - 中东 - 非洲</option>
                       <option value="Latin America">拉美</option>
                       <option value="North America">北美</option>
-
-                    </select><input style="display: none;" name="ctl00$pageContent$CustomerServiceCenter$btnRegionCustomerServiceCenters" value="GO!" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$pageContent$CustomerServiceCenter$btnRegionCustomerServiceCenters&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_pageContent_CustomerServiceCenter_btnRegionCustomerServiceCenters" class="btn" type="submit">
+                    </select>
+                    <input style="display: none;" name="ctl00$pageContent$CustomerServiceCenter$btnRegionCustomerServiceCenters" value="GO!"  id="ctl00_pageContent_CustomerServiceCenter_btnRegionCustomerServiceCenters" class="btn" type="submit">
                   </li>
                   <li>
                     <span>按照国家（全部）</span>
-                    <select name="ctl00$pageContent$CustomerServiceCenter$ddlCountryCustomerServiceCenters" onchange="javascript:setTimeout('__doPostBack(\'ctl00$pageContent$CustomerServiceCenter$ddlCountryCustomerServiceCenters\',\'\')', 0)" id="ctl00_pageContent_CustomerServiceCenter_ddlCountryCustomerServiceCenters">
+                    <select name="ctl00$pageContent$CustomerServiceCenter$ddlCountryCustomerServiceCenters"  id="ctl00_pageContent_CustomerServiceCenter_ddlCountryCustomerServiceCenters">
                       <option selected="selected" value="">（选择）</option>
                       <option value="us">美国</option>
                       <option value="ca">加拿大</option>
@@ -301,24 +278,20 @@
                       <option value="zm">赞比亚</option>
                       <option value="zw">津巴布韦</option>
 
-                    </select><input style="display: none;" name="ctl00$pageContent$CustomerServiceCenter$btnCountryCustomerServiceCenters" value="GO!" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$pageContent$CustomerServiceCenter$btnCountryCustomerServiceCenters&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_pageContent_CustomerServiceCenter_btnCountryCustomerServiceCenters" class="btn" type="submit">
+                    </select>
+                    <input style="display: none;" name="ctl00$pageContent$CustomerServiceCenter$btnCountryCustomerServiceCenters" value="GO!" id="ctl00_pageContent_CustomerServiceCenter_btnCountryCustomerServiceCenters" class="btn" type="submit">
                   </li>
                   <li>
                     <span>按产品</span>
-                    <input name="txtByProduct" value="Product Keywords" maxlength="50" id="txtByProduct" type="text"><input name="btnProductSearch" value="GO!" id="btnProductSearch" class="btn" type="submit" style="padding:0px 10px; margin:0px 10px;">
+                    <input name="txtByProduct" value="Product Keywords" maxlength="50" id="txtByProduct" type="text">
+                    <input name="btnProductSearch" value="GO!" id="btnProductSearch" class="btn" type="submit" style="padding:0px 10px; margin:0px 10px;">
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
-        <div class="conbox">
-          <div class="footer"><div class="ftrBorder"></div>
-            <div class="copyh">Copyright © 2014 kevlay International Corporation.&nbsp;&nbsp;Privacy and Legal Statements</div></div>
-        </div>
       </div>
-
     </div>
   </div>
 </template>
