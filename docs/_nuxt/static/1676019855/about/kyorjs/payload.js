@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/about/kyorjs", {data:[{},{}],fetch:{},mutations:void 0});
