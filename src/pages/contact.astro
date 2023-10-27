@@ -1,0 +1,43 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+<SiteLayout pageTitle="联系我们">
+	<!-- rts contact form area start  -->
+	<div id="contact" style="padding-top: 240px;" class="rts-contact-wrapper-form-area rts-section-gapBottom">
+		<div class="container">
+			<div class="row g-24">
+				<div class="col-lg-7 col-md-12 col-sm-12 col-12">
+					<div class="form--area" style="padding: 40px 80px;">
+						<div class="title-area-left">
+							<p class="pre">
+								电话：027-81803685 <br>
+								邮箱：kevlay@126.com <br>
+								地址：武汉市洪山区关山大道新发展中心B座2402
+							</p>
+							<h2 class="title">
+								联系我们
+							</h2>
+						</div>
+						<form action="index.html#"
+									class="contact-page-form mt--30">
+							<div class="name-email-wraper">
+								<input type="name" placeholder="Your Name" required="">
+								<input type="email" placeholder="Email Address" required="">
+							</div>
+							<input type="text" placeholder="Select Subject">
+							<textarea placeholder="Type Your Message" required=""></textarea>
+							<button class="rts-btn btn-primary">Send Message</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-12 col-sm-12 col-12">
+						<div class="map-area-wrapper">
+								<iframe src="/static/embed.html" width="600" height="100%" style="border:0;"
+												allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- rts contact form area end  -->
+</SiteLayout>

@@ -1,0 +1,25 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+const {pageTitle} = Astro.props;
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kevlay凯伏莱 - {pageTitle}</title>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/static/fontawesome-6.css">
+    <link rel="stylesheet" href="/static/swiper.css">
+    <link rel="stylesheet" href="/static/unicons.css">
+    <link rel="stylesheet" href="/static/metismenu.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="index-electrical onepage">
+<Header />
+<slot/>
+<Footer />
+</body>
+</html>
